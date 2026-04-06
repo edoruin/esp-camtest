@@ -30,8 +30,8 @@
 
 #include "camera_pins.h"
 
-const char *ssid_Router     = "CLAROF7PGZ";  //input your wifi name
-const char *password_Router = "48575443FED4C7A5";  //input your wifi passwords
+const char *ssid_Router     = "";  //input your wifi name
+const char *password_Router = "";  //input your wifi passwords
 camera_config_t config;
 
 void startCameraServer();

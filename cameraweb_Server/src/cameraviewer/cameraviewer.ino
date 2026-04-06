@@ -32,12 +32,12 @@
 
 #include "camera_pins.h"
 
-const char *ssid_Router     = "Karen";  //input your wifi name
-const char *password_Router = "Karen8318";  //input your wifi passwords
+const char *ssid_Router     = "";  //input your wifi name
+const char *password_Router = "";  //input your wifi passwords
 
 // ─── MQTT HiveMQ Cloud ──────────────────────────────────────
-const char* MQTT_BROKER   = "b1439a9c1a134c51be1ef17aa3c3cd62.s1.eu.hivemq.cloud";
-const int   MQTT_PORT     = 8884;
+const char* MQTT_BROKER   = "";
+const int   MQTT_PORT     = ;
 const char* MQTT_USER     = "public";
 const char* MQTT_PASS     = "Admin123";
 const char* TOPIC_CAMERA_IP = "zemi/camera/ip";
