@@ -36,11 +36,11 @@ const char *ssid_Router     = "";  //input your wifi name
 const char *password_Router = "";  //input your wifi passwords
 
 // ─── MQTT HiveMQ Cloud ──────────────────────────────────────
-const char* MQTT_BROKER   = "";
-const int   MQTT_PORT     = ;
-const char* MQTT_USER     = "public";
-const char* MQTT_PASS     = "Admin123";
-const char* TOPIC_CAMERA_IP = "zemi/camera/ip";
+const char* MQTT_BROKER   = "your-broker-url.hivemq.cloud";
+const int   MQTT_PORT     = 8883;
+const char* MQTT_USER     = "your_username";
+const char* MQTT_PASS     = "your_password";
+const char* TOPIC_CAMERA_IP = "your/camera/topic";
 
 WiFiClientSecure espClient;
 PubSubClient mqtt(espClient);
