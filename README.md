@@ -1,24 +1,24 @@
 # ESP Camera Test
 
-Código para probar la cámara ESP32, basado en el repositorio oficial de Espressif, adaptado para conectar y probar con Arduino.
+Code to test the ESP32 camera, based on the official Espressif repository, adapted for connecting and testing with Arduino.
 
-## Carpetas
+## Folders
 
 ### `cameraweb_Server/`
-Versión adaptada con soporte MQTT. Publica la IP del servidor en HiveMQ Cloud para acceso remoto. Configurada para el modelo de cámara **AI-THINKER**.
+Adapted version with MQTT support. Publishes the server IP on HiveMQ Cloud for remote access. Configured for the **AI-THINKER** camera model.
 
 ### `Sketch_06.1_CameraWebServer/`
-Versión base del código original (Freenove). Versión simple del servidor web para pruebas iniciales de la cámara.
+Base version of the original code (Freenove). Simple version of the web server for initial camera testing.
 
-## Uso
+## Usage
 
-1. Seleccionar el modelo de cámara en `board_config.h` o en el archivo `.ino`
-2. Configurar credenciales WiFi
-3. Compilar y cargar en el ESP32
-4. Acceder vía web a la IP asignada
+1. Select the camera model in `board_config.h` or in the `.ino` file
+2. Configure WiFi credentials
+3. Compile and upload to the ESP32
+4. Access via web to the assigned IP
 
-## Requisitos
+## Requirements
 
-- ESP32 con cámara
-- Biblioteca `esp-camera`
-- WiFi disponibles
+- ESP32 with camera
+- `esp-camera` library
+- Available WiFi
