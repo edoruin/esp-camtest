@@ -90,9 +90,9 @@
     </div>
 
     <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="config.js"></script>
     <script>
-        const brokerUrl = 'wss://your-broker-url.hivemq.cloud:8884/mqtt';
-        const topicIP = 'your/camera/topic';
+        const { brokerUrl, topicIP, username, password } = mqttConfig;
         
         const statusEl = document.getElementById('status');
         const ipDisplayEl = document.getElementById('ipDisplay');
@@ -113,8 +113,8 @@
                 clean: true,
                 connectTimeout: 4000,
                 reconnectPeriod: 1000,
-                username: 'your_username',
-                password: 'your_password'
+                username: username,
+                password: password
             });
 
             client.on('connect', function() {
